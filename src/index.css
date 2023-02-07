@@ -1,0 +1,77 @@
+html {
+  background-color: beige;  
+}
+
+.App {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bingo-call-container {
+  margin: 30px;
+  margin-top: 10px;
+  max-width: 70%;
+  overflow-wrap: break-word;
+}
+
+.call-controls {
+  display: flex;
+  justify-content: center;
+}
+.call-num {
+  text-align: center;
+  font-size: 30px;
+}
+
+.bingo-board {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  place-items: center;
+  /* grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr); */
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  border: 1px solid gray;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.held {
+  background-color: cadetblue;
+  color: whitesmoke;
+}
+
+.called:hover {
+  background-color: yellow;
+}
+
+.held.called {
+  background-color: cadetblue;
+  color: whitesmoke;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  margin: 16px 6px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 0.5px solid lightgray;
+  cursor: pointer;
+}
