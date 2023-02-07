@@ -9,7 +9,7 @@ function BingoCall(props) {
 				<button onClick={props.start}>Start Calls</button>
 				<button onClick={props.stop}>Stop Calls</button>
 			</div>
-			<div>Calls so far: {JSON.stringify(props.callsSoFar.slice(2))}</div>
+			<div>Calls so far: {JSON.stringify(props.callsSoFar.filter(value => value != null))}</div>
 		</div>
 	)
 }
